@@ -19,6 +19,15 @@ export class CartService {
     return this.items;
   }
 
+  removeItem(product) {
+    //this.items = this.items.filter(p => p.Id !== product.Id);
+    var index = this.items.indexOf(product);
+    if (index > -1) {
+      this.items.splice(index, 1);
+    }
+    console.log("items: ", this.items);
+  }
+
   clearCart() {
     this.items = [];
     return this.items;
