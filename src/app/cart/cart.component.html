@@ -11,18 +11,111 @@
 </div>
 
 <form [formGroup]="checkoutForm" (ngSubmit)="onSubmit()">
-    <div>
-        <label for="name">
-          Name
-        </label>
-        <input id="name" type="text" formControlName="name">
-      </div>
+    <h3>Checkout</h3>
     
-      <div>
-        <label for="address">
-          Address
-        </label>
-        <input id="address" type="text" formControlName="address">
-      </div>
+    <h5>Contact Information</h5>
+    <div>
+        <input id="emailAddress" type="text" formControlName="emailAddress" placeholder="Email Address">
+    </div>
+
+    <div>
+        <input id="phone" type="text" formControlName="phone" placeholder="Phone Number">
+    </div>
+
+    <div>
+        <input id="companyName" type="text" formControlName="companyName" placeholder="Company Name">
+    </div>
+    <div>
+        <input id="interest" type="text" formControlName="interest" placeholder="Industry Interest">
+    </div>
+
+    <br>
+
+    <h5>Shipping Address</h5>
+    <div>
+        <input id="firstName" type="text" formControlName="firstName" placeholder="First Name">
+    </div>
+
+    <div>
+        <input id="lastName" type="text" formControlName="lastName" placeholder="Last Name">
+    </div>
+
+    <div>
+        <input id="street" type="text" formControlName="street" placeholder="Street Address">
+    </div>
+
+    <div>
+        <input id="aptOrSuite" type="text" formControlName="aptOrSuite" placeholder="Apartment, Suite, etc. (optional)">
+    </div>
+
+    <div>
+        <input id="city" type="text" formControlName="city" placeholder="City">
+    </div>
+
+    <div>
+        <input id="country" type="text" formControlName="country" placeholder="Country/Region">
+    </div>
+
+    <div class="select">
+        <select id="state" formControlName="state" aria-placeholder="Select a State">
+            <option value="" disabled selected>Select a State</option>
+            <option value="AL">Ala.</option>
+            <option value="AK">Alaska</option>
+            <option value="AZ">Ariz.</option>
+            <option value="AR">Ark.</option>
+            <option value="CA">Calif.</option>
+            <option value="CO">Colo.</option>
+            <option value="CT">Conn.</option>
+            <option value="DE">Del.</option>
+            <option value="DC">D.C.</option>
+            <option value="FL">Fla.</option>
+            <option value="GA">Ga.</option>
+            <option value="HI">Hawaii</option>
+            <option value="ID">Idaho</option>
+            <option value="IL">Ill.</option>
+            <option value="IN">Ind.</option>
+            <option value="IA">Iowa</option>
+            <option value="KS">Kans.</option>
+            <option value="KY">Ky.</option>
+            <option value="LA">La.</option>
+            <option value="ME">Maine</option>
+            <option value="MD">Md.</option>
+            <option value="MA">Mass.</option>
+            <option value="MI">Mich.</option>
+            <option value="MN">Minn.</option>
+            <option value="MS">Miss.</option>
+            <option value="MO">Mo.</option>
+            <option value="MT">Mont.</option>
+            <option value="NE">Nebr.</option>
+            <option value="NV">Nev.</option>
+            <option value="NH">N.H.</option>
+            <option value="NJ">N.J.</option>
+            <option value="NM">N.M.</option>
+            <option value="NY">N.Y.</option>
+            <option value="NC">N.C.</option>
+            <option value="ND">N.D.</option>
+            <option value="OH">Ohio</option>
+            <option value="OK">Okla.</option>
+            <option value="OR">Ore.</option>
+            <option value="PA">Pa.</option>
+            <option value="RI">R.I.</option>
+            <option value="SC">S.C.</option>
+            <option value="SD">S.D.</option>
+            <option value="TN">Tenn.</option>
+            <option value="TX">Tex.</option>
+            <option value="UT">Utah</option>
+            <option value="VT">Vt.</option>
+            <option value="VA">Va.</option>
+            <option value="WA">Wash.</option>
+            <option value="WV">W.Va.</option>
+            <option value="WI">Wis.</option>
+            <option value="WY">Wyo.</option>
+        </select>
+    </div>
+
+
+    <div>
+        <input id="zip" type="text" formControlName="zip" placeholder="Zip Code">
+    </div>
     <button class="button" type="submit">Purchase</button>  
 </form>

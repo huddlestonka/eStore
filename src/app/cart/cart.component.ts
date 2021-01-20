@@ -10,8 +10,18 @@ import { CartService } from '../cart.service';
 export class CartComponent implements OnInit {
   items = this.cartService.getItems();
   checkoutForm = this.formBuilder.group({
-    name: '',
-    address: ''
+    emailAddress: '',
+    phone: '',
+    companyName: '',
+    interest: '',
+    firstName: '',
+    lastName: '',
+    street: '',
+    aptOrSuite: '',
+    city: '',
+    country: '',
+    state: '',
+    zip: ''
   });
 
   constructor(
